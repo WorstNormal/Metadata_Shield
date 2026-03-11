@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Детектор ИИ и Редактуры",
+  "version": "1.0.0",
+  "description": "Локально анализирует метаданные медиа (изображения, GIF, видео) EXIF/XMP/C2PA на предмет генерации ИИ или инструментов редактирования.",
+  "permissions": ["storage"],
+  "host_permissions": ["*://*/*"],
+  "background": {
+    "service_worker": "background.bundle.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": ["content.style.css"],
+      "js": ["content.bundle.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Детектор ИИ и Редактуры"
+  }
+}

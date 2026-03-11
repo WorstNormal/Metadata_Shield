@@ -1,0 +1,23 @@
+{
+  "name": "metadata_shield",
+  "version": "1.0.0",
+  "description": "Расширение для обнаружения ИИ и редактирования",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
+  },
+  "dependencies": {
+    "c2pa": "^0.18.0",
+    "exifr": "^7.1.3"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^12.0.2",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^5.1.4"
+  },
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Детектор ИИ и Редактуры</title>
+  <link rel="stylesheet" href="popup.style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">O</div>
+    <h2>Детектор</h2>
+  </div>
+  
+  <div class="setting-row">
+    <span>Включить расширение</span>
+    <label class="switch">
+      <input type="checkbox" id="globalToggle" checked>
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <div class="setting-group">
+    <h3>Режим анализа</h3>
+    <label class="radio-label">
+      <input type="radio" name="mode" value="auto" id="modeAuto" checked>
+      Авто (Проверять видимые)
+    </label>
+    <label class="radio-label">
+      <input type="radio" name="mode" value="hover" id="modeHover">
+      Наведение (Проверять при наведении 1с)
+    </label>
+  </div>
+
+  <div class="setting-group">
+    <h3>Глубокий анализ (Gemini AI)</h3>
+    <div class="api-key-row">
+      <input type="password" id="geminiApiKey" placeholder="API Ключ Gemini" autocomplete="off">
+      <button id="toggleKeyVisibility" class="key-toggle" title="Показать/Скрыть">👁</button>
+    </div>
+    <div id="apiKeyStatus" class="api-key-status"></div>
+    <p class="api-hint">Получить бесплатный ключ: <a href="https://aistudio.google.com/apikey" target="_blank">aistudio.google.com</a></p>
+  </div>
+
+  <div class="info">
+    <p>🤖 Создано ИИ</p>
+    <p>🖌️ Отредактировано в ПО</p>
+    <p>🔬 Глубокий скан (кнопка при наведении)</p>
+  </div>
+
+  <script src="popup.bundle.js"></script>
+</body>
+</html>
